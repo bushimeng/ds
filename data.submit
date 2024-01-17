@@ -1,0 +1,10 @@
+executable      =   DistributedDreamTeam/data/data.py
+Output          =   DistributedDreamTeam/data/output.txt
+Error           =   DistributedDreamTeam/data/error.txt
+Log             =   DistributedDreamTeam/data/log.txt
+
+notification=Never
+Arguements=$(Process)
+PeriodicRelease=(JobStatus==5)&&(CurrentTime-EnteredCurrentState>30)
+onExitRemove=(ExitStatus==0)
+Queue
