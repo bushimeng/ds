@@ -4,8 +4,8 @@ JOB LogisticRegression       LogisticRegression.submit
 JOB GaussianNB               GaussianNB.submit
 JOB MLPClassifier            MLPClassifier.submit
 JOB SVM                      SVM.submit
-PARENT import                CHILD eda
-PARENT eda                   CHILD LogisticRegression
-PARENT eda             		 CHILD GaussianNB
-PARENT eda                   CHILD MLPClassifier
-PARENT eda             		 CHILD SVM
+PARENT import CHILD eda
+PARENT eda CHILD LogisticRegression
+PARENT eda CHILD GaussianNB
+PARENT eda CHILD MLPClassifier
+PARENT eda CHILD SVM
